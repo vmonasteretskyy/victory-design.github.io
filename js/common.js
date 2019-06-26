@@ -32,5 +32,61 @@ $(document).ready(function () {
     });
   
   
-    
+  // style open slider
+  $('.styleopen-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
+
+});
+
+// map
+
+function initMap() {
+
+      var lat1 = 49.5602927;
+      var lng1 = 25.6168999;
+
+  map = new google.maps.Map(document.getElementById("map"), {
+      center: {
+          lat: lat1, lng: lng1
+      }
+      , zoom: 17, panControl: !1, zoomControl: !1, scaleControl: !1, disableDefaultUI: !0, styles: [
+          
+      ]
+  }
+  )
+  var icons = {
+      info: {
+          icon: 'images/map-marker.svg',
+      }
+  };
+
+  var features = [
+      {
+          position: new google.maps.LatLng(49.5602927, 25.6168999),
+          type: 'info'
+      }
+  ];
+  // Create markers.
+  features.forEach(function (feature) {
+      var marker = new google.maps.Marker({
+          position: feature.position,
+          icon: icons[feature.type].icon,
+          map: map
+      });
+  });
+}
