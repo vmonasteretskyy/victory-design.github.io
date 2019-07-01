@@ -958,10 +958,12 @@ footer .foot-meet-block .descr {
 .headmenu__list li a {
     position: relative;
 }
-.header-white.header_main .headmenu__list > li > a:after {
+
+.header-white.header_main .headmenu__list>li>a:after {
     display: none;
 }
-.headmenu__list > li > a:after {
+
+.headmenu__list>li>a:after {
     content: '';
     position: absolute;
     display: inline-block;
@@ -980,6 +982,7 @@ footer .foot-meet-block .descr {
 .headmenu__list li:hover a:after {
     width: 100%;
 }
+
 .style-box .style-box__picture a img {
     transition: 1s;
     -webkit-transition: 1s;
@@ -987,9 +990,11 @@ footer .foot-meet-block .descr {
     -ms-transition: 1s;
     -o-transition: 1s;
 }
+
 .style-box .style-box__picture {
     overflow: hidden;
 }
+
 .style-box:hover .style-box__picture a img {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -1005,6 +1010,7 @@ footer .foot-meet-block .descr {
     -ms-transition: .4s;
     -o-transition: .4s;
 }
+
 .link_back {
     transition: .4s;
     -webkit-transition: .4s;
@@ -1012,11 +1018,13 @@ footer .foot-meet-block .descr {
     -ms-transition: .4s;
     -o-transition: .4s;
 }
+
 .link_back:hover {
     color: #fff;
     position: relative;
     z-index: 1;
 }
+
 .link_back:hover:before {
     height: 17px;
     top: 0px;
@@ -1028,7 +1036,9 @@ footer .foot-meet-block .descr {
     overflow: hidden;
 }
 
-
+.style-box {
+    overflow: hidden;
+}
 
 
 
