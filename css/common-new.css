@@ -958,8 +958,10 @@ footer .foot-meet-block .descr {
 .headmenu__list li a {
     position: relative;
 }
-
-.headmenu__list li a:after {
+.header-white.header_main .headmenu__list > li > a:after {
+    background-color: #fff;
+}
+.headmenu__list > li > a:after {
     content: '';
     position: absolute;
     display: inline-block;
