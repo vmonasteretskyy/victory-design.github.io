@@ -35,6 +35,10 @@
 }
 
 @media(max-width:1650.8px) {
+    .port-filter__item {
+        height: 450px;
+    }
+
     .styleopen-slider-section .slick-slide img {
         height: 500px;
     }
@@ -52,28 +56,63 @@
 
 /* step style  - 20 font16*/
 @media(max-width:1545.8px) {
+    .port-filter__item:hover a>img {
+        top: 60px;
+        left: 60px;
+    }
+
+    .port-filter-title p {
+        font-size: 18px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 60px;
+    }
+
+    .port-filter-title p:after {
+        left: 60px;
+    }
+
+    .port-filter__item {
+        height: 350px;
+    }
+
+    .style-box__philosophytext__descr a {
+        font-size: 16px;
+    }
+
+    .style-box__philosophytext__title a {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
     .map_contact {
         height: 400px;
     }
+
     .contbox>ul li:first-child a {
         margin-bottom: 5px;
     }
+
     .page__contact-title {
         font-size: 70px;
         line-height: 80px;
     }
+
     .page__contact-title span {
         font-size: 35px;
         top: -24px;
     }
 
     .contbox>ul li a,
-    .contbox>a, .contbox>p.contbox__descr {
+    .contbox>a,
+    .contbox>p.contbox__descr {
         font-size: 16px;
     }
+
     .contbox__black-title {
         font-size: 36px;
     }
+
     .contbox__title {
         margin-bottom: 20px;
     }
@@ -82,6 +121,7 @@
     .styleopen-slider-section .slick-slide img {
         height: 400px;
     }
+
     .style-box__descr a,
     .style-box__descr {
         font-size: 16px;
@@ -147,15 +187,65 @@
     }
 }
 
+@media(max-width:1440.8px) {
+    .portfolio__filter-item {
+        margin-left: 10px;
+        padding-left: 18px;
+    }
+
+    .portfolio__filter-item button:before {
+        width: 15px;
+    }
+
+    .portfolio__filter-item:hover button:before {
+        width: 30px;
+    }
+
+    .portfolio__filter-item:hover {
+        padding-left: 35px;
+    }
+}
 
 /* font 14 */
 @media(max-width:1199.8px) {
-    .style-box__descr a, .style-box__descr {
+    .port-filter-title p {
+        font-size: 16px;
+        padding-top: 6px;
+        padding-bottom: 8px;
+        padding-left: 40px;
+    }
+
+    .port-filter-title p:after {
+        left: 40px;
+    }
+
+    .port-filter__item:hover a>img {
+        top: 40px;
+        left: 40px;
+    }
+
+    .style-box__philosophytext__title a {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .style-box__philosophytext__descr a {
         font-size: 14px;
     }
+
+    .style-box__philosophytext__descr {
+        line-height: 20px;
+    }
+
+    .style-box__descr a,
+    .style-box__descr {
+        font-size: 14px;
+    }
+
     .styleopen-slider-section .slick-slide img {
         height: 350px;
     }
+
     .headmenu__list li {
         display: inline-block;
         margin-right: 35px;
@@ -180,19 +270,34 @@
 }
 
 @media(max-width:991.8px) {
+    .portfolio__filter {
+        margin-top: 10px;
+    }
+
+    .port-filter .row .port-filter__item:nth-child(1),
+    .port-filter .row .port-filter__item:nth-child(1n + 1) {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
     .contbox__title {
         margin-bottom: 10px;
     }
+
     .page.page__contact {
         height: 600px;
         background-position: bottom left;
     }
+
     .bottom-continfo {
         bottom: 30px;
     }
+
     .map_contact {
         height: 350px;
     }
+
     .header__logo img {
         max-width: 100%;
     }
@@ -249,6 +354,27 @@
 }
 
 @media(max-width:767.8px) {
+    .port-filter__item {
+        height: 300px;
+    }
+
+    .port-filter .row .port-filter__item:nth-child(1),
+    .port-filter .row .port-filter__item:nth-child(1n + 1) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .philosophy-topblock>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .philosophy-topblock {
+        height: 450px;
+    }
+
     .bottom-continfo {
         position: relative;
     }
@@ -256,9 +382,11 @@
     .slick-prev.slick-arrow {
         left: 30px;
     }
+
     .slick-next.slick-arrow {
         right: 30px;
     }
+
     header .phone-hide {
         display: none;
     }
@@ -396,30 +524,58 @@
         bottom: initial;
         margin-top: 30px;
     }
+
     .contact-filter {
         display: block;
         width: 100%;
         height: 100%;
-        background-color: rgba(255,255,255,.4);
+        background-color: rgba(255, 255, 255, .4);
         position: absolute;
     }
+
     .page__contact-title {
         color: #afafaf;
     }
 
 
 }
+
 @media(max-width:575.8px) {
+    .portfolio__filter .portfolio__filter-item:first-child button:before {
+        display: inline-block;
+
+    }
+
+    .portfolio__filter .portfolio__filter-item:first-child {
+        margin-left: 10px;
+        padding-left: 18px;
+    }
+
+    .portfolio__filter-item {
+        display: block;
+    }
+
+    .style-box__philosophytext__title a {
+        margin-top: 0;
+    }
+
+    .philosophy-topblock {
+        height: 340px;
+    }
+
     .slick-prev.slick-arrow {
         left: 15px;
     }
+
     .slick-next.slick-arrow {
         right: 15px;
     }
+
     .page__contact-title {
         font-size: 48px;
         line-height: 56px;
     }
+
     .page__contact-title span {
         top: -10px;
     }
