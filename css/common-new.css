@@ -1040,7 +1040,9 @@ footer .foot-meet-block .descr {
     overflow: hidden;
 }
 
-
+footer {
+    overflow: hidden;
+}
 
 
 
