@@ -959,7 +959,7 @@ footer .foot-meet-block .descr {
     position: relative;
 }
 .header-white.header_main .headmenu__list > li > a:after {
-    background-color: #fff;
+    display: none;
 }
 .headmenu__list > li > a:after {
     content: '';
